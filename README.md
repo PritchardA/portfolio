@@ -1,2 +1,2 @@
-# the-mission-github.io
+# The Misson
 Codebase for portfolio website
