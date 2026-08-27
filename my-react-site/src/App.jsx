@@ -1,16 +1,16 @@
 import { useState } from 'react'
 
 const projects = [
-	{ title: 'Project / One', type: 'Product design', year: '2024', className: 'project-orange' },
-	{ title: 'Project / Two', type: 'Web experience', year: '2023', className: 'project-blue' },
-	{ title: 'Project / Three', type: 'Brand identity', year: '2023', className: 'project-green' },
-	{ title: 'Project / Four', type: 'Creative code', year: '2022', className: 'project-pink' },
+	{ title: 'Project / One', type: 'Artwork', year: '2024', className: 'project-orange' },
+	{ title: 'Project / Two', type: 'Web Novel', year: '2023', className: 'project-blue' },
+	{ title: 'Project / Three', type: 'The Mission', year: '2023', className: 'project-green' },
+	{ title: 'Project / Four', type: 'YouTube', year: '2022', className: 'project-pink' },
 ]
 
 function App() {
 	const [menuOpen, setMenuOpen] = useState(false)
 	const [filter, setFilter] = useState('All work')
-	const filters = ['All work', 'Product design', 'Web experience', 'Brand identity', 'Creative code']
+	const filters = ['All work', 'Artwork', 'Web Novel', 'The Mission', 'YouTube', 'Live Streams']
 	const visibleProjects = filter === 'All work' ? projects : projects.filter((project) => project.type === filter)
 	const closeMenu = () => setMenuOpen(false)
 
@@ -20,7 +20,7 @@ function App() {
 				<a className="wordmark" href="#top" onClick={closeMenu} aria-label="Return to top">ANTHONY<span>PRITCHARD</span><b>.</b></a>
 				<button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle menu"><span /> <span /></button>
 				<nav className={menuOpen ? 'nav-links is-open' : 'nav-links'}>
-					<a href="#work" onClick={closeMenu}>Work</a><a href="#about" onClick={closeMenu}>About</a><a href="#notes" onClick={closeMenu}>Notes</a><a className="nav-contact" href="#contact" onClick={closeMenu}>Let&apos;s talk <span>+</span></a>
+					<a href="#work" onClick={closeMenu}>Work</a><a href="#about" onClick={closeMenu}>About</a><a href="#notes" onClick={closeMenu}>Blog</a><a className="nav-contact" href="#contact" onClick={closeMenu}>Let&apos;s talk <span>+</span></a>
 				</nav>
 			</header>
 
@@ -38,7 +38,15 @@ function App() {
 
 				<section className="contact section-wrap" id="contact"><p className="eyebrow">04 / Start a conversation</p><h2>Drop me a line,<br /><em>if you dare.</em></h2><a className="contact-email" href="mailto:hello@example.com">ezotericno@themission.gg<span>-&gt;</span></a><div className="contact-bottom"><span>Open to collaborations / freelance / good questions</span><a href="#top">Back to top ^</a></div></section>
 			</main>
-			<footer><span>YOURNAME. / © 2024</span><div><a href="#contact">LinkedIn</a><a href="#contact">Instagram</a><a href="#contact">Are.na</a></div></footer>
+			<footer><span>Anthony Pritchard. / © 2026</span>
+			<div>
+				<a href="#contact">
+				LinkedIn</a>
+				<a href="#contact">
+				Instagram</a>
+				<a href="#contact"> Are.na</a>
+				</div>
+			</footer>
 		</div>
 	)
 }
