@@ -17,7 +17,7 @@ function App() {
 	return (
 		<div className="site-shell">
 			<header className="topbar">
-				<a className="wordmark" href="#top" onClick={closeMenu} aria-label="Return to top">YOUR<span>NAME</span><b>.</b></a>
+				<a className="wordmark" href="#top" onClick={closeMenu} aria-label="Return to top">ANTHONY<span>PRITCHARD</span><b>.</b></a>
 				<button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle menu"><span /> <span /></button>
 				<nav className={menuOpen ? 'nav-links is-open' : 'nav-links'}>
 					<a href="#work" onClick={closeMenu}>Work</a><a href="#about" onClick={closeMenu}>About</a><a href="#notes" onClick={closeMenu}>Notes</a><a className="nav-contact" href="#contact" onClick={closeMenu}>Let&apos;s talk <span>+</span></a>
@@ -26,8 +26,8 @@ function App() {
 
 			<main id="top">
 				<section className="hero section-wrap">
-					<div className="hero-copy reveal"><p className="eyebrow"><span className="status-dot" /> Available for select projects / 2024</p><h1>Ideas with<br /><em>impact.</em></h1><p className="hero-intro">I&apos;m <strong>[Your Name]</strong>, a [your role] turning complex problems into clear, memorable digital experiences.</p><a className="text-link" href="#work">Explore selected work <span>-&gt;</span></a></div>
-					<div className="hero-mark reveal reveal-delay" aria-hidden="true"><div className="mark-ring"><span>Y</span></div><p>CREATIVE<br />THINKING<br />IN MOTION</p></div><p className="scroll-hint">Scroll to explore <span>v</span></p>
+					<div className="hero-copy reveal"><p className="eyebrow"><span className="status-dot" /> The Mission Statement</p><h1>Live for <br /><em> today.</em></h1><p className="hero-intro">I&apos;m <strong>Anthony Pritchard</strong>, a nerd with a passion for technology, problem solving, and continuous learning. I try to live my life with purpose and curiosity.</p><a className="text-link" href="#work">Explore my projects <span>-&gt;</span></a></div>
+					<div className="hero-mark reveal reveal-delay" aria-hidden="true"><div className="mark-ring"><span>A P</span></div><p>CURIOUSITY<br />CREATIVITY<br />BLATENT FUN</p></div><p className="scroll-hint">Scroll to explore <span>v</span></p>
 				</section>
 
 				<section className="work section-wrap" id="work"><div className="section-heading"><p className="eyebrow">01 / Selected work</p><h2>A few things<br /><em>I&apos;ve made.</em></h2></div><div className="filter-row" role="group" aria-label="Filter projects">{filters.map((item) => <button className={filter === item ? 'filter active' : 'filter'} key={item} onClick={() => setFilter(item)}>{item}</button>)}</div><div className="project-grid">{visibleProjects.map((project, index) => <article className={`project-card ${project.className}`} key={project.title}><div className="project-visual"><span className="visual-label">0{index + 1}</span><span className="visual-shape" /></div><div className="project-meta"><div><h3>{project.title}</h3><p>{project.type}</p></div><span>{project.year}</span></div></article>)}</div></section>
