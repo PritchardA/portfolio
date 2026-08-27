@@ -36,7 +36,7 @@ function App() {
 
 				<section className="notes section-wrap" id="notes"><div className="section-heading"><p className="eyebrow">03 / Personal Blog</p><h2>Thoughts,<br /><em>occasionally.</em></h2></div><div className="note-list"><a href="#contact"><span>01</span><strong>What I&apos;m learning about [topic]</strong><small>Read note / 5 min</small><b>-&gt;</b></a><a href="#contact"><span>02</span><strong>A practical guide to [subject]</strong><small>Read note / 8 min</small><b>-&gt;</b></a><a href="#contact"><span>03</span><strong>Notes from [event or place]</strong><small>Read note / 3 min</small><b>-&gt;</b></a></div></section>
 
-				<section className="contact section-wrap" id="contact"><p className="eyebrow">04 / Start a conversation</p><h2>Have a good<br /><em>one in mind?</em></h2><a className="contact-email" href="mailto:hello@example.com">hello@example.com <span>-&gt;</span></a><div className="contact-bottom"><span>Open to collaborations / freelance / good questions</span><a href="#top">Back to top ^</a></div></section>
+				<section className="contact section-wrap" id="contact"><p className="eyebrow">04 / Start a conversation</p><h2>Drop me a line,<br /><em>if you dare.</em></h2><a className="contact-email" href="mailto:hello@example.com">ezotericno@themission.gg<span>-&gt;</span></a><div className="contact-bottom"><span>Open to collaborations / freelance / good questions</span><a href="#top">Back to top ^</a></div></section>
 			</main>
 			<footer><span>YOURNAME. / © 2024</span><div><a href="#contact">LinkedIn</a><a href="#contact">Instagram</a><a href="#contact">Are.na</a></div></footer>
 		</div>
